@@ -1,11 +1,22 @@
 @font-face {
-    font-family: Roboto;
-    src: url(fonts/Roboto-Bold.ttf);
-  }
+    font-family: 'Roboto-Bold';
+    src: url(../fonts/Roboto-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'Roboto-LightItalic';
+    src: url(../fonts/Roboto-LightItalic.ttf);
+}
+
+@font-face {
+    font-family: 'Roboto-Regular';
+    src: url(../fonts/Roboto-Regular.ttf);
+}
 
 html, body {
     margin: 0;
     padding: 0;
+    font-family: "Roboto-Regular";
   }  
 
 #index_header{
@@ -34,7 +45,7 @@ html, body {
 
 #header_h1{
     color: #F9FAF8;
-    font-weight: extra-bold;
+    font-family: "Roboto-Bold";
     font-size: 48px;
 }
 
@@ -47,13 +58,13 @@ html, body {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    gap: 16px;
+    gap: 32px;
 }
 
 .side_by_side{
     padding-bottom: 10%;
     padding-top: 10%;
-    margin: 2%;
+    margin: 1%;
 }
 
 #index_middle{
@@ -61,13 +72,33 @@ html, body {
     display: flex;
     align-items: center;
     justify-content: space-around;
+    flex-direction: column;
+    margin-top: 1.25%;
+    margin-bottom: 2.5%;
 }
 
-#index_middle .image_card img{
+#middle_h2{
+    font-size: 36px;
+    color: #1f2937;
+    font-family: "Roboto-Bold";
+}
+
+#image_cards{
+    display: flex;
+    gap: 16px;
+    margin-top: 2%;
+}
+
+#index_middle #image_cards .image_card{
+    flex-direction: row;
+}
+
+#index_middle #image_cards .image_card img{
     border: 3px solid #3882f6;
     height: 100px;
     width: 100px;
     border-radius: 5px;
+    object-fit: cover;
 }
 
 button{
@@ -79,11 +110,22 @@ button{
     background-color: #3882f6;
 }
 
+button:hover{
+    background-color: #f9ea47;
+    color: #1f2937;
+}
+
+#sign_up button:hover{
+    border-color: #1f2937;
+}
+
 #quote_div{
     background-color: #E5E7EB;
     color: #1f2937;
     align-items: center;
     display: flex;
+    margin-top: 2.5%;
+    margin-bottom: 2.5%;
 }
 
 #inner_div{
@@ -96,13 +138,13 @@ button{
 #quote_div #inner_div p:nth-child(1){
     align-items: center;
     font-size: 36px;
-    font-style: italic;
-    font-weight: lighter;
+    font-family: "Roboto-LightItalic";
 }
 
 #quote_div #inner_div p:nth-child(2) {
     font-weight: bold;
     font-size: 18px;
+    text-align: right;
 }
 
 #sign_up{
@@ -114,6 +156,8 @@ button{
     margin-right: 10%;
     margin-left: 10%;
     border-radius: 5px;
+    margin-top: 2.5%;
+    margin-bottom: 5%;
 }
 
 #sign_up button{
@@ -128,6 +172,7 @@ button{
 
 #index_footer p{
     padding: 1.5%;
+    margin: 0;
 }
 
 
