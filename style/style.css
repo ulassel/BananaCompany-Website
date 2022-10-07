@@ -3,6 +3,11 @@
     src: url(fonts/Roboto-Bold.ttf);
   }
 
+html, body {
+    margin: 0;
+    padding: 0;
+  }  
+
 #index_header{
     background-color: #1f2937;
 }
@@ -11,7 +16,7 @@
     margin-right: 10%;
 }
 
-#header_nav #header_logo{
+#header_nav #header_logo{   
     font-size: 24px;
     color: #F9FAF8;
     float: left;
@@ -40,12 +45,14 @@
 
 #container{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     gap: 16px;
 }
 
 .side_by_side{
+    padding-bottom: 10%;
+    padding-top: 10%;
     margin: 2%;
 }
 
@@ -53,10 +60,11 @@
     text-align: center;
     display: flex;
     align-items: center;
+    justify-content: space-around;
 }
 
-#index_middle img{
-    border: 5px solid #3882f6;
+#index_middle .image_card img{
+    border: 3px solid #3882f6;
     height: 100px;
     width: 100px;
     border-radius: 5px;
@@ -65,7 +73,7 @@
 button{
     width: 100px;
     height: 25px;
-    border-radius: 2px;
+    border-radius: 5px;
     border: none;
     color: #F9FAF8;
     background-color: #3882f6;
@@ -73,16 +81,43 @@ button{
 
 #quote_div{
     background-color: #E5E7EB;
+    color: #1f2937;
+    align-items: center;
+    display: flex;
+}
+
+#inner_div{
+    margin-top: 2.5%;
+    margin-bottom: 2.5%;
+    margin-right: 19%;
+    margin-left: 19%;
+}
+
+#quote_div #inner_div p:nth-child(1){
+    align-items: center;
     font-size: 36px;
     font-style: italic;
     font-weight: lighter;
-    color: #1f2937;
+}
+
+#quote_div #inner_div p:nth-child(2) {
+    font-weight: bold;
+    font-size: 18px;
 }
 
 #sign_up{
     background-color: #3882f6;
     display: flex;
     color: #F9FAF8;
+    justify-content: space-around;
+    align-items: center;
+    margin-right: 10%;
+    margin-left: 10%;
+    border-radius: 5px;
+}
+
+#sign_up button{
+    border: 2px solid #F9FAF8;
 }
 
 #index_footer{
@@ -91,6 +126,9 @@ button{
     color: #F9FAF8;
 }
 
+#index_footer p{
+    padding: 1.5%;
+}
 
 
 
