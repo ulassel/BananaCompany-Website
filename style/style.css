@@ -46,7 +46,14 @@
 }
 
 .side_by_side{
+    margin: 2%;
+}
 
+button{
+    border-radius: 2px;
+    border: none;
+    color: white;
+    background-color: #3882f6;
 }
 
 #index_footer{
