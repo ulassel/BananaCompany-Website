@@ -24,7 +24,7 @@
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    color: white;
+    color: #F9FAF8;
 }
 
 #header_h1{
@@ -67,7 +67,7 @@ button{
     height: 25px;
     border-radius: 2px;
     border: none;
-    color: white;
+    color: #F9FAF8;
     background-color: #3882f6;
 }
 
@@ -79,10 +79,16 @@ button{
     color: #1f2937;
 }
 
+#sign_up{
+    background-color: #3882f6;
+    display: flex;
+    color: #F9FAF8;
+}
+
 #index_footer{
     background-color: #1f2937;
     text-align: center;
-    color: white;
+    color: #F9FAF8;
 }
 
 
