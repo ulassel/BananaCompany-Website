@@ -43,6 +43,14 @@ html, body {
     color: #F9FAF8;
 }
 
+#header_nav a:hover{
+    color: #f9ea47;
+}
+
+#header_nav #header_logo:hover{
+    color: #f9ea47;
+}
+
 #header_h1{
     color: #F9FAF8;
     font-family: "Roboto-Bold";
